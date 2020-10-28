@@ -312,6 +312,13 @@ class MenuBar extends React.Component {
                 id="gui.menuBar.new"
             />
         );
+        const uploadMessage = (
+            <FormattedMessage
+                defaultMessage="Upload"
+                description="Menu bar item for uploading"
+                id="gui.menuBar.uploadBtn"
+            />
+        );
         const remixButton = (
             <Button
                 className={classNames(
@@ -386,6 +393,14 @@ class MenuBar extends React.Component {
                                             onClick={this.handleClickNew}
                                         >
                                             {newProjectMessage}
+                                        </MenuItem>
+                                    </MenuSection>
+                                    <MenuSection>
+                                        <MenuItem
+                                            isRtl={this.props.isRtl}
+                                            onClick={this.handleClickNew}
+                                        >
+                                            {uploadMessage}
                                         </MenuItem>
                                     </MenuSection>
                                     {(this.props.canSave || this.props.canCreateCopy || this.props.canRemix) && (
