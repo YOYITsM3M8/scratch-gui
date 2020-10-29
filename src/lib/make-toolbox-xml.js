@@ -719,7 +719,7 @@ const myBlocks = function () {
 const turbowarp = function () {
      // todo: translate name
      return `
-     <category name="TurboWarp" id="turbowarp" colour="#FF4D4D" secondaryColour="#FF3D3D">
+     <category name="RetroMod" id="retromod" colour="#FF4D4D" secondaryColour="#FF3D3D">
          <block type="control_if">
              <value name="CONDITION">
                  <block type="argument_reporter_boolean">
@@ -784,7 +784,7 @@ const makeToolboxXML = function (isInitialSetup, isStage = true, targetId, categ
     const operatorsXML = moveCategory('operators') || operators(isInitialSetup, isStage, targetId);
     const variablesXML = moveCategory('data') || variables(isInitialSetup, isStage, targetId);
     const myBlocksXML = moveCategory('procedures') || myBlocks(isInitialSetup, isStage, targetId);
-    const turbowarpXML = moveCategory('turbowarp') || turbowarp(isInitialSetup, isStage, targetId);
+    const retromodXML = moveCategory('retromod') || retromod(isInitialSetup, isStage, targetId);
 
     const everything = [
         xmlOpen,
