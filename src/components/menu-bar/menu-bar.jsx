@@ -71,7 +71,7 @@ import dropdownCaret from './dropdown-caret.svg';
 import languageIcon from '../language-selector/language-icon.svg';
 import aboutIcon from './icon--about.svg';
 
-import scratchLogo from './scratch-logo.svg';
+import scratchLogo from './AC497761-433B-4424-90B1-DFE912342FE7.jpeg';
 
 import sharedMessages from '../../lib/shared-messages';
 
