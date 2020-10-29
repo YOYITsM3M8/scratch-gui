@@ -716,7 +716,7 @@ const myBlocks = function () {
 };
 /* eslint-enable no-unused-vars */
 
-const turbowarp = function () {
+const retromod = function () {
      // todo: translate name
      return `
      <category name="RetroMod" id="retromod" colour="#FF4D4D" secondaryColour="#FF3D3D">
@@ -797,7 +797,7 @@ const makeToolboxXML = function (isInitialSetup, isStage = true, targetId, categ
         operatorsXML, gap,
         variablesXML, gap,
         myBlocksXML, gap,
-        turbowarpXML
+        retromodXML
     ];
 
     for (const extensionCategory of categoriesXML) {
