@@ -269,7 +269,8 @@ describe('Working with the blocks', () => {
         await loadUri(uri);
         await clickText('Costumes');
         await clickText('Code');
-        await clickBlocksCategory('Variables');
+        await clickText('Variables', scope.blocksTab);
+        await driver.sleep(500); // Wait for scroll
         await clickText('Make a List');
         const el = await findByXpath("//input[@name='New list name:']");
         await el.sendKeys('list1');
